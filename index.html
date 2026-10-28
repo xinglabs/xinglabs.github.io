@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#08090b">
+  <meta name="description" content="XINGLABS / xwyan 的个人实验室。把想法做成能用的工具。">
+  <meta property="og:title" content="XINGLABS — 夜に、創る。">
+  <meta property="og:description" content="把想法做成能用的工具。一个保持好奇的个人实验室。">
+  <meta property="og:type" content="website">
+  <title>XINGLABS — 夜に、創る。</title>
+  <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳转到正文</a>
+  <div class="world" aria-hidden="true">
+    <img class="world-image" src="./assets/tokyo-night.png" alt="" width="1672" height="941" fetchpriority="high">
+    <div class="world-halo"></div><div class="world-grid"></div>
+    <img class="skyline" src="./assets/city.svg" alt="">
+    <canvas id="rain"></canvas>
+    <div class="grain"></div><div class="vignette"></div>
+  </div>
+  <div class="cursor-light" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="XINGLABS 首页"><img src="./assets/mark.svg" alt="" width="31" height="31"><span>XING<span class="brand-light">LABS</span></span></a>
+    <div class="header-right"><span class="header-note">個人実験室</span><button id="motion-toggle" class="motion-toggle" type="button" aria-pressed="true" aria-label="暂停背景动态效果"><span class="motion-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span id="motion-label">动态 · 开</span></button></div>
+  </header>
+  <main id="main">
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <div class="hero-topline enter" style="--delay:0.05s"><span class="micro"><span class="red-square"></span> XWYAN / PERSONAL LAB</span><span class="micro hero-coordinate">好奇心、眠らない。</span></div>
+      <div class="hero-copy">
+        <div class="hero-kicker enter" style="--delay:0.15s"><span class="outline-label">独立 · 好奇 · 不停创造</span><span class="short-line"></span></div>
+        <h1 id="hero-title" class="hero-title enter" style="--delay:0.25s"><span class="title-first" data-text="XING">XING</span><span class="title-last">LABS<span class="title-period">.</span></span></h1>
+        <div class="hero-bottom enter" style="--delay:0.45s"><p>把想法做成<br><span>能用的工具。</span></p><a class="enter-link" href="#about"><span>向下探索</span><span class="arrow-down" aria-hidden="true">↓</span></a></div>
+      </div>
+      <span class="vertical-jp enter" style="--delay:0.6s" aria-hidden="true">夜に、創る。</span>
+      <div class="hero-baseline enter" style="--delay:0.7s"><span class="micro">THOUGHT → CODE → REALITY</span><span class="micro baseline-right">NO SIGNAL LOST <i></i></span></div>
+      <div class="scroll-line" aria-hidden="true"></div>
+    </section>
+    <section id="about" class="about content-section" aria-labelledby="about-title">
+      <div class="section-rule reveal"><span class="micro">01 / THE MIND</span><span class="micro">意志</span></div>
+      <div class="about-layout">
+        <div class="about-side reveal"><img class="about-eye" src="./assets/eye.svg" alt="" aria-hidden="true" loading="lazy"><span class="giant-kanji" aria-hidden="true">醒</span><div class="identity"><div class="identity-mark identity-avatar"><img src="./assets/avatar.jpg" alt="xwyan 的头像" width="48" height="48" loading="lazy"></div><div><strong>xwyan</strong><span>XINGLABS / 个人实验室</span></div></div></div>
+        <div class="about-main"><h2 id="about-title" class="reveal">保持清醒。<br><span class="red-text">保持创造。</span></h2><p class="about-intro reveal">好的想法，不该只停在脑海里。</p><p class="body-copy reveal">这里是我的个人实验室。写代码、做实验，把好奇变成行动，把日常的麻烦变成真正能用的工具。</p><div class="manifesto reveal"><span aria-hidden="true">↳</span><p>不急着定义自己。<br>让作品，慢慢给出答案。</p></div></div>
+      </div>
+      <div class="word-strip" aria-hidden="true"><div>STAY CURIOUS <span>✳</span> MAKE IT REAL <span>✳</span> STAY CURIOUS <span>✳</span> MAKE IT REAL <span>✳</span></div></div>
+    </section>
+    <section id="next" class="next content-section" aria-labelledby="next-title">
+      <div class="section-rule reveal"><span class="micro">02 / THE UNKNOWN</span><span class="micro">未完成</span></div>
+      <div class="next-stage">
+        <div class="signal-orb" aria-hidden="true"><div class="orb-core"></div><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div><span class="orb-star">✳</span></div>
+        <div class="next-copy"><span class="eyebrow reveal">WORK IN PROGRESS / 未完待续</span><h2 id="next-title" class="reveal">下一件作品，<br><span>正在发生。</span></h2><p class="body-copy reveal">一些想法在生长。<br>等它足够好，再让它与你见面。</p></div>
+        <span class="next-watermark" aria-hidden="true">NEXT</span>
+      </div>
+    </section>
+    <section id="connect" class="connect content-section" aria-labelledby="connect-title">
+      <div class="section-rule reveal"><span class="micro">03 / THE CONNECTION</span><span class="micro">接続</span></div>
+      <div class="connect-top reveal"><p class="eyebrow">SOMEWHERE BETWEEN AN IDEA & A COMMIT</p><span class="red-square" aria-hidden="true"></span></div>
+      <h2 id="connect-title" class="connect-title reveal">在另一端，<br><span>找到我。</span></h2>
+      <a class="github-link reveal" href="https://github.com/xinglabs" target="_blank" rel="noopener noreferrer"><div><span class="micro">THE OPEN DOOR</span><strong>GitHub <span class="github-handle">/ xinglabs</span></strong></div><span class="github-arrow" aria-hidden="true">↗</span><span class="sr-only">（在新标签页打开）</span></a>
+      <div class="closing-jp reveal" aria-hidden="true">夜はまだ、終わらない。</div>
+    </section>
+  </main>
+  <footer class="site-footer"><span class="micro">XINGLABS <span class="footer-slash">/</span> MADE OF CURIOSITY.</span><a href="#top" class="back-top">回到顶部 <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>
